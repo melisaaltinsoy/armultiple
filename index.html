@@ -8,9 +8,15 @@
 		<!-- handle unknown marker -->
 
 		<!-- handle hiro marker -->
-		<a-marker preset='hiro'>
-   <a-entity id="pack" gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf)" animation-mixer>
-   </a-entity>
+       <a-marker preset='hiro'>
+           <a-entity id="pack" gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf)" animation-mixer>
+       </a-entity>
+			
+	<!-- handle kanji marker -->
+	<a-marker preset='kanji'>
+	    <a-entity id="normal" obj-model="obj: url(./normal.obj); 
+            mtl: url(./normal.mtl)">
+         </a-entity>
 
 	<a-text value="ciao bella!"></a-text>
 		</a-marker>
@@ -24,11 +30,7 @@
 			</a-box>
 		</a-marker>
 		
-		<!-- handle kanji marker -->
-		<a-marker preset='kanji'>
-			   <a-entity id="normal" obj-model="obj: url(./normal.obj); 
-            mtl: url(./normal.mtl)">
-   </a-entity>
+	
 
 		</a-marker>
 		
