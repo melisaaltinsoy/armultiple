@@ -9,9 +9,16 @@
 
 		<!-- handle hiro marker            <a-entity id="pack" gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf)" animation-mixer>
  -->
+	    <a-assets crossorigin="anonymous">
+
+    <a-asset-item crossorigin="anonymous" id="tree-obj" src="anger.obj"></a-asset-item>
+
+  </a-assets>
+
        <a-marker preset='hiro'>
-	       	    <a-entity id="normal" obj-model="obj: url(https://github.com/manukko/armultiple/blob/master/anger.obj)">
-       </a-entity>
+	       	           
+	       
+  <a-entity position="1800 0 5300" scale="0.8 0.8 0.8" obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
 				</a-marker>
 	
 	<!-- handle kanji marker -->
