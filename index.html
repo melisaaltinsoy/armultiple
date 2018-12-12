@@ -1,5 +1,6 @@
 <!doctype HTML>
 <html>
+	
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
 <body style='margin : 0px; overflow: hidden;' >
@@ -8,7 +9,7 @@
 
 		<!-- handle hiro marker -->
 		<a-marker preset='hiro'>
-   <a-entity gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf)" animation-mixer>
+   <a-entity id="pack" gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf)" animation-mixer>
    </a-entity>
 
 	<a-text value="ciao bella!"></a-text>
@@ -25,7 +26,7 @@
 		
 		<!-- handle kanji marker -->
 		<a-marker preset='kanji'>
-			   <a-entity obj-model="obj: url(./normal.obj); 
+			   <a-entity id="normal" obj-model="obj: url(./normal.obj); 
             mtl: url(./normal.mtl)">
    </a-entity>
 
