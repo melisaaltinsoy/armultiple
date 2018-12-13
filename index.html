@@ -17,7 +17,23 @@
   </a-assets>
 
        <a-marker preset='hiro' position="0.094 0.119 -5.407" rotation="86.256 -171.95 154.498">
-	       <a-entity crossorigin="anonymous" position="37.62 -162.28 583.75" scale="0.1 0.1 0.1" obj-model="obj:anger.obj;mtl:anger.mtl"></a-entity>
+	       <a-entity crossorigin="anonymous" position="37.62 -162.28 583.75" scale="0.1 0.1 0.1" obj-model="obj:anger.obj;mtl:anger.mtl">
+	           <a-text side='double' 
+			
+			value="     |
+                                 \|/|/
+                               \|\\|//|/
+                                \|\|/|/
+                                  \|/
+                                   |
+                             _\|/__|_\|/_"
+			
+			align='center' position='2 0 10' color='red'>
+				<a-animation attribute="position" from="0.6 1.1 0" to="0.6 1.3 0" direction="alternate" dur="500"
+					repeat="indefinite" easing='ease-in-out-cubic'></a-animation>
+		   </a-text>
+	       
+	       </a-entity>
        </a-marker>
 	
 	<!-- handle kanji marker -->
