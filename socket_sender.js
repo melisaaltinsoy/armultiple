@@ -30,16 +30,25 @@ function initializeWebSocket() {
  
  */
 
-function SEND(var name) {
+$(document).ready(function() {
+    $("button.button").on("click",function(){
+        var name = $("input.name").val();
+        SEND(name);
+    });
+    
+});
+
+function SEND(name) {
 
     $.ajax({
         type: "GET",
         url: "https://parallelbillboard.altervista.org/",
         data: {
-            "GET": name
+            "SET": name
         },
         success: function (result) {
             window.console.log('Successful');
+            alert("we received your....");
         }
     });
 
