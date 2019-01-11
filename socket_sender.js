@@ -6,7 +6,7 @@ function initializeWebSocket() {
 	if ("WebSocket" in window) {
 	   
 	   // Let us open a web socket
-	   var ws = new WebSocket("ws://172.20.10.9:7000/parallel/");
+	   var ws = new WebSocket("wss://172.20.10.9:7000/parallel/");
 		
 	   ws.onopen = function() {
 		  
