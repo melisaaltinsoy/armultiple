@@ -1,4 +1,4 @@
-initializeWebSocket();
+/*initializeWebSocket();
 
 
 function initializeWebSocket() {
@@ -27,3 +27,20 @@ function initializeWebSocket() {
  
  
  //when i click on .... send a message with ws.send("Message to send");
+ 
+ */
+
+function SEND(var name) {
+
+    $.ajax({
+        type: "GET",
+        url: "https://parallelbillboard.altervista.org/",
+        data: {
+            "GET": name
+        },
+        success: function (result) {
+            window.console.log('Successful');
+        }
+    });
+
+}
